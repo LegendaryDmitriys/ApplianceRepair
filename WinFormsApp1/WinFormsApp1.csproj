@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="MainForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="FormMaster.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="FormAdmin.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="FormStatistics.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Moq" Version="4.20.72" />
+      <PackageReference Include="Npgsql" Version="9.0.2" />
+      <PackageReference Include="xunit" Version="2.9.3" />
+    </ItemGroup>
+
+</Project>
